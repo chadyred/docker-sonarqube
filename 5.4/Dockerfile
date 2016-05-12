@@ -19,7 +19,7 @@ ENV SONAR_VERSION 5.4
 #       Key fingerprint = F118 2E81 C792 9289 21DB  CAB4 CFCA 4A29 D264 68DE
 # uid                  sonarsource_deployer (Sonarsource Deployer) <infra@sonarsource.com>
 # sub   2048R/06855C1D 2015-05-25
-RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE
+RUN gpg --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE
 
 RUN set -x \
 	&& cd /opt \
